@@ -1,0 +1,844 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: rgb(238, 234, 0);
+
+  --red: rgb(230, 0, 0);
+  --pale-blue: rgb(230, 239, 254);
+  --blue: rgb(22, 86, 196);
+}
+/* nav start */
+.navbar {
+  box-shadow: 0 4px 8px -1px rgb(190, 189, 189);
+}
+
+.nav-container {
+  position: relative;
+}
+.navbar-collapse {
+  position: absolute;
+  right: 5rem;
+  transition: 1s ease;
+}
+
+.nav-item a,
+.navbar-nav .btn span {
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
+  font-weight: 600;
+}
+
+.nav-item a {
+  font-size: 1.2rem;
+}
+.navbar-nav .btn span {
+  font-size: 1rem;
+}
+.nav-item a:hover {
+  color: var(--red);
+}
+.navbar-nav .btn span {
+  color: #fff;
+  transition: 1s ease;
+}
+
+.navbar-collapse button {
+  background-color: rgba(59, 105, 183);
+}
+
+.nav-login-btn {
+  width: 11rem;
+}
+/* navend */
+
+/* carousel css start */
+
+#bg-container {
+  position: relative;
+  background-image: url("../image/safer-and-more-accessible-buildings-with-new-building-control-act-changes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bg-container .bg-filter {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(74, 134, 206, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+#bg-container .bg-filter h3,
+p {
+  color: #fff;
+}
+#bg-container .bg-filter h3 {
+  font-weight: 600;
+}
+
+#bg-container .bg-filter p {
+  font-weight: 300;
+  font-size: larger;
+}
+
+.carousel-item .start-info {
+  margin: 10rem 10rem 0 0;
+}
+/* carousel css end */
+
+/* about css start */
+.about {
+  background-color: var(--pale-blue);
+  padding: 4rem 2rem;
+}
+
+.about-image img {
+  width: 180px;
+  height: 360px;
+  margin-left: 55px;
+  transition: 1s ease-in-out;
+
+  /* box-shadow: 0 0 5px 0.1px rgb(102, 124, 223); */
+}
+
+/* end about css change */
+
+/* videos css start */
+.video-section,
+.video-info {
+  background-color: rgb(253, 248, 229);
+}
+
+.video-img img {
+  width: 28rem;
+  height: 15rem;
+  transition: 1s ease-in;
+}
+
+.video-img span {
+  position: relative;
+}
+
+.video-img i {
+  position: absolute;
+  z-index: 5;
+  top: 80px;
+  right: 200px;
+  color: #fff;
+}
+
+/* different color indicator for video carousel */
+.carousel .carousel-indicators li button {
+  background-color: rgb(58, 105, 182);
+  opacity: 0.6;
+}
+.carousel .carousel-indicators .active {
+  background-color: var(--yellow);
+}
+
+/* end video section */
+
+/* showcase */
+.showcase img {
+  width: 17rem;
+  height: 12rem;
+  transition: 1s ease;
+}
+
+.showcase-content h5 {
+  opacity: 0.7;
+}
+
+/* showcase end */
+
+/* offer section start */
+
+.offer-function .function-title b {
+  font-weight: 650;
+  font-size: 1.4rem;
+  color: black;
+}
+
+.function-title span {
+  /* word-spacing: 8%; */
+  line-height: 5px;
+}
+
+.offer-function img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.6rem;
+  width: 8.2rem;
+  border-radius: 0.5rem;
+  height: 8.5rem;
+}
+/* offer section end */
+/* subscription start */
+.card,
+.card-header {
+  padding: 0.1rem 0rem;
+  border-radius: 0.5rem;
+}
+
+.subscription .card {
+  width: 20rem;
+  height: 35rem;
+  border: 0;
+  box-shadow: 0 0 6px 1px rgb(214, 214, 214);
+}
+
+.card-header {
+  background-color: var(--red);
+  color: #fff;
+  height: 5rem;
+}
+
+.card-header,
+.card-title,
+.card-body .card-btn {
+  text-align: center;
+}
+
+.card-title {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.card ul li {
+  color: var(--red);
+  font-size: 1.5rem;
+}
+
+.card ul li p {
+  color: black;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: left;
+}
+.card-btn {
+  border-color: rgb(198, 198, 198);
+  margin-top: 4rem;
+}
+/* subscription end */
+
+/* footer start */
+
+footer {
+  background-color: var(--blue);
+}
+
+.footer-info {
+  height: 80vh;
+}
+
+.ismart-info h3 {
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+.ismart-info h3 span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4.5rem;
+  height: 3.5px;
+  background-color: var(--yellow);
+}
+
+.ismart-info-content,
+.ismart-info-content a {
+  font-size: 1.7rem;
+  color: white;
+  /* text-decoration: none; */
+}
+
+.social-info a {
+  display: inline-block;
+  position: relative;
+  background-color: black;
+
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  color: var(--blue);
+}
+
+.social-info a i {
+  position: absolute;
+  font-size: 1rem;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+
+.copyright {
+  width: 100%;
+  height: 10vh;
+  padding: 0.5rem 1.5rem 0;
+  text-align: center;
+  background-color: rgb(255, 215, 11);
+  font-size: 1.5rem;
+  font-weight: 499;
+}
+/* footer end */
+
+/* commonly used css */
+
+.offer,
+.subscription {
+  background-color: var(--pale-blue);
+}
+
+.about h5 {
+  opacity: 0.7;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.showcase h3,
+.video-info h3,
+.offer-content h3,
+.card-heading,
+.card-header,
+.card-title,
+.ismart-info h3 {
+  opacity: 0.9;
+  font-weight: 650;
+  font-size: 2.1rem;
+  word-spacing: 0.5rem;
+}
+
+.showcase-content h5,
+.about h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.showcase-content p,
+.video-info p {
+  font-size: 1.5rem;
+  font-weight: 450;
+  line-height: 110%;
+
+  word-spacing: 5;
+}
+
+.about p,
+.offer-content p,
+.offer-function .title-content {
+  font-size: 1.2rem;
+  line-height: 140%;
+  /* word-spacing: 10%; */
+}
+
+/* responsive start */
+
+@media (max-width: 1920px) {
+  .navbar-collapse {
+    position: absolute;
+    right: 5rem;
+  }
+}
+@media (max-width: 1693px) {
+  .bg-filter .start-info {
+    position: absolute;
+    right: 10rem;
+    transition: 1s ease-in;
+  }
+}
+
+@media (max-width: 1368px) {
+  .bg-filter .start-info {
+    right: 10rem;
+    transition: 1s ease-in;
+  }
+}
+
+@media (max-width: 1348px) {
+  .bg-filter .start-info {
+    right: 10rem;
+
+    transition: 1s ease;
+  }
+}
+@media (max-width: 1310px) {
+  .navbar-collapse {
+    position: absolute;
+    right: 0.8rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1268px) {
+  .bg-filter .start-info {
+    right: 10rem;
+    transition: 1s ease;
+  }
+  .navbar-collapse {
+    position: relative;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 1240px) {
+  .nav-item a {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .btn {
+    width: 7rem;
+  }
+  .navbar-nav .btn span {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1178px) {
+  .about-image img {
+    width: 120px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 1158px) {
+  .footer .ismart-info h3,
+  .ismart-info-content p,
+  .ismart-info-content a,
+  .ismart-info-content address {
+    font-size: 1.8rem;
+    transition: 1s;
+  }
+}
+
+@media (max-width: 1076px) {
+  .nav-item a {
+    font-size: 0.8rem;
+  }
+
+  .navbar-nav .btn {
+    width: 7rem;
+  }
+  .navbar-nav .btn span {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-toggler {
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 858px) {
+  .video-img img {
+    width: 20rem;
+    height: 10rem;
+  }
+
+  .video-img i {
+    top: 50px;
+    right: 100px;
+  }
+}
+
+@media (max-width: 794px) {
+  .bg-filter .start-info {
+    right: 2rem;
+
+    transition: 1s ease;
+  }
+}
+@media (max-width: 767px) {
+  .showcase p {
+    font-size: 1.1rem;
+    transition: 1s ease;
+  }
+}
+
+@media (max-width: 715px) {
+  .bg-filter .start-info {
+    left: 2rem;
+    top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem;
+    transition: 1s ease-out;
+  }
+}
+
+@media (max-width: 618px) {
+  .video-img img {
+    width: 10rem;
+    height: 8rem;
+  }
+
+  .video-img i {
+    top: 30px;
+    right: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .subscription-card {
+    margin-left: 6rem;
+    transition: 1s ease;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-image img {
+    width: 120px;
+    height: 260px;
+  }
+}
+@media (max-width: 490px) {
+  .subscription-card {
+    margin-left: 2rem;
+    transition: 1s ease;
+  }
+  .showcase .img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .copyright {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 413px) {
+  .about-image img {
+    margin: auto;
+    width: 100px;
+    height: 260px;
+  }
+
+  .subscription-card {
+    margin-left: 1rem;
+    transition: 1s ease;
+  }
+}
+
+@media (max-width: 375px) {
+  .showcase {
+    padding: 0;
+  }
+  .showcase .img {
+    margin: auto;
+    width: 8rem;
+    height: 10rem;
+  }
+  footer row {
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 351px) {
+  .subscription-card .card {
+    width: 100%;
+  }
+
+  /* .footer .ismart-info h3,
+  .ismart-info-content p,
+  .ismart-info-content a,
+  {
+    font-size: 0.8rem;
+    transition: 1s;
+  } */
+}
+/* end home */
+
+/*XXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXX*/
+
+/* start register & login */
+.sign-in {
+  background-color: var(--pale-blue);
+}
+
+.sign-in-form .card {
+  position: relative;
+
+  margin: 15vh auto;
+  width: 25.85rem;
+  height: 25rem;
+  border-radius: 0.2rem 0.2rem 1rem 1rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem rgb(196, 196, 196);
+}
+/* sign in bar */
+.sign-in-bar {
+  position: absolute;
+  z-index: -1;
+  background-color: #fff;
+  bottom: 24.5rem;
+
+  border-radius: 1rem 1rem 0 0;
+  width: 25.8rem;
+  height: 1rem;
+}
+
+.red-bar {
+  background-color: var(--red);
+}
+
+.yel-bar {
+  background-color: var(--yellow);
+}
+
+.blue-bar {
+  background-color: var(--blue);
+}
+/* sign in bar end */
+/* logo header */
+.sign-in-header {
+  background-color: #fff;
+}
+
+/* sigin in title */
+.sign-in-title,
+.sign-in-btn {
+  font-size: 1rem;
+  font-weight: 250;
+  letter-spacing: 1px;
+  word-spacing: 0.2rem;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+/* sign in input start */
+.input-password,
+.input-email {
+  height: 3rem;
+}
+
+.password span,
+.email span {
+  width: 3.5rem;
+}
+
+.input-email,
+.input-password {
+  background-color: var(--pale-blue);
+}
+
+.input-group-text {
+  background-color: rgb(204, 223, 255);
+}
+
+.password {
+  position: relative;
+}
+.password .fa-eye-slash {
+  position: absolute;
+  top: 0.9rem;
+  right: 4rem;
+  color: rgb(117, 117, 118);
+}
+
+.sign-in-btn {
+  background-color: rgb(25, 96, 222);
+  color: #fff;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 0.2rem;
+}
+
+.form-check-input {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.form-check-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(135, 135, 135);
+}
+
+/* end input */
+/* start register & forgot password */
+.register div a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* sign in page end */
+
+/*XXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXX*/
+
+/* sing-in-page1  start*/
+.empty {
+  display: inline-block;
+  width: 7rem;
+}
+.sign-in1-body {
+  background-color: var(--pale-blue);
+}
+.start-journey {
+  color: rgb(69, 70, 72);
+
+  letter-spacing: 0.1px;
+}
+
+.email-form {
+  width: 45rem;
+}
+.user-email {
+  border: 0;
+  width: 100%;
+  color: rgb(69, 69, 72);
+  background-color: var(--pale-blue);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+}
+.email-line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(116, 128, 113);
+}
+
+.sign-email-btn {
+  background-color: rgb(25, 102, 232);
+  color: #fff;
+  height: 3.5rem;
+}
+
+.btn-line-1,
+.btn-line-2 {
+  display: inline-block;
+  width: 40.5%;
+  height: 0.1rem;
+  background-color: rgb(196, 201, 195);
+}
+/* common css */
+.sign-email-btn,
+.start-journey,
+.btn-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.btn-text {
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: rgb(108, 109, 114);
+  margin: 0.3rem;
+}
+
+.facebook-logo {
+  width: 4.5rem;
+  height: 2.8rem;
+}
+.google-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.linkedin-logo {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+/* responsive */
+@media (max-width: 1350px) {
+  .email-form {
+    width: 40rem;
+    transition: 1s ease;
+  }
+}
+
+@media (max-width: 811px) {
+  .sign-email-btn,
+  .start-journey,
+  .btn-text {
+    font-size: 1.1rem;
+    transition: 1s ease;
+  }
+
+  .email-form {
+    width: 30rem;
+    transition: 1s ease;
+  }
+}
+
+@media (max-width: 500px) {
+  .email-form {
+    width: 20rem;
+    transition: 1s ease;
+  }
+}
+
+/* singinPage end */
+
+/*XXXXXXXXXXXXX*/
+/*XXXXXXXXXXXXX*/
+
+/* speaking page start */
+.speakingPage {
+  background-color: var(--pale-blue);
+}
+.noti-bar-i,
+.fa-circle {
+  color: black;
+}
+.noti-bar-i {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.noti-bar-i:hover {
+  color: var(--red);
+}
+.fa-circle {
+  font-size: 3rem;
+}
+
+.fa-circle:hover {
+  opacity: 0.5;
+}
+.speaking-progress {
+  height: 100vh;
+}
+.progress-details {
+  margin: 3rem auto;
+  width: 65vw;
+  height: 60vh;
+}
+
+.progress-details h3,
+.speaking-btn {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 620;
+}
+
+.progress-details p {
+  font-size: 1.2rem;
+}
+
+.speaking-btn {
+  width: 47rem;
+
+  background-color: rgb(25, 102, 232);
+  color: #fff;
+  height: 3.8rem;
+}
+
+/* responsive start */
+@media (max-width: 991px) {
+  .noti-bar-i {
+    font-size: 1rem;
+    margin: 1rem;
+    transition: 1s ease;
+  }
+
+  .fa-circle {
+    font-size: 2rem;
+    margin-top: 0.2rem;
+    transition: 1s ease;
+  }
+}
+
+/* speakign page end  */
+/*XXXXXXXXXXXXX*/
